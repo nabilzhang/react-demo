@@ -10,10 +10,10 @@ function Header({ location }) {
       theme="dark"
     >
       <Menu.Item key="/users">
-        <Link to="/users"><Icon type="bars" />Users</Link>
+        <Link to="/users"><Icon type="bars" />用户</Link>
       </Menu.Item>
       <Menu.Item key="/">
-        <Link to="/"><Icon type="home" />Home</Link>
+        <Link to="/"><Icon type="home" />首页</Link>
       </Menu.Item>
       <Menu.Item key="/404">
         <Link to="/page-you-dont-know"><Icon type="frown-circle" />404</Link>

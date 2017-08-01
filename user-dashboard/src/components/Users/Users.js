@@ -31,31 +31,31 @@ function Users({ dispatch, list: dataSource, loading, total, page: current }) {
 
   const columns = [
     {
-      title: 'Name',
+      title: '姓名',
       dataIndex: 'name',
       key: 'name',
       render: text => <a href="">{text}</a>,
     },
     {
-      title: 'Email',
+      title: '邮箱',
       dataIndex: 'email',
       key: 'email',
     },
     {
-      title: 'Website',
+      title: '主页',
       dataIndex: 'website',
       key: 'website',
     },
     {
-      title: 'Operation',
+      title: '操作',
       key: 'operation',
       render: (text, record) => (
         <span className={styles.operation}>
           <UserModal record={record} onOk={editHandler.bind(null, record.id)}>
-            <a>Edit</a>
+            <a>修改</a>
           </UserModal>
-          <Popconfirm title="Confirm to delete?" onConfirm={deleteHandler.bind(null, record.id)}>
-            <a href="">Delete</a>
+          <Popconfirm title="确定要删除?" onConfirm={deleteHandler.bind(null, record.id)}>
+            <a href="">删除</a>
           </Popconfirm>
         </span>
       ),
